@@ -16,20 +16,10 @@ def is_valid(s):
 
     if not (s[0].isalpha() and s[1].isalpha()):
         return False
-  
-    first_digit_index = None
-    for i, ch in enumerate(s):
-        if ch.isdigit():
-            first_digit_index = i
-            break
+    
+    if not s[-2:].isdigit():
+        return False
 
-    if first_digit_index is not None:
-      
-        if s[first_digit_index] == '0':
-            return False
-      
-        if not s[first_digit_index:].isdigit():
-            return False
 
     return True
 
