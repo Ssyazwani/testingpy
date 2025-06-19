@@ -24,7 +24,7 @@ fruit_cal = {
 
 
 
-fruit = input("Item: ").strip().lower()  # Prompt and input on same line
+fruit = input("Item: ").strip().lower()  
 
 while fruit not in fruit_cal:
     fruit = input().lower()
