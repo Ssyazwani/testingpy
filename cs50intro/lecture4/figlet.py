@@ -19,5 +19,3 @@ text = input("Input: ")
 print("Output:")
 print(figlet.renderText(text))
 
-# f = Figlet(font='slant')
-# print(f.renderText('text to render'))
