@@ -16,6 +16,8 @@
 # Your program should behave as expected, case- and space-insensitively.
 
 extensionsIn = input("File name:")
+extensions = extensionsIn.strip().lower()
+
 gif = ".gif"
 jpg = ".jpg"
 jpeg = ".jpeg"
@@ -24,25 +26,25 @@ pdf= ".pdf"
 txt = ".txt"
 zip = ".zip"
 
-if gif in extensionsIn:
+if gif in extensions:
     print("image/gif")
 
-elif jpg in extensionsIn:
+elif extensions.endswith(jpg):
     print("image/jpg")
 
-elif jpeg in extensionsIn:
+elif extensions.endswith(jpeg):
     print("image/jpeg")
 
-elif png in extensionsIn:
+elif png in extensions:
     print("image/png")
 
-elif pdf in extensionsIn:
+elif pdf in extensions:
     print("application/pdf")
 
-elif txt in extensionsIn:
+elif txt in extensions:
     print("text/plain")
 
-elif zip in extensionsIn:
+elif zip in extensions:
     print("application/zip")
 
 else:
