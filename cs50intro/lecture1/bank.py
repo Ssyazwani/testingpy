@@ -9,7 +9,7 @@
 bankAns = input("Greeting:")
 
 
-if bankAns.startswith("Hello") or bankAns.startswith("hello"):
+if bankAns.strip().startswith("Hello") or bankAns.strip().startswith("hello"):
     print("$0")
 
 elif bankAns.startswith("H")or bankAns.startswith("h"):

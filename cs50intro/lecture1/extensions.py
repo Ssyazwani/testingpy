@@ -18,33 +18,33 @@
 extensionsIn = input("File name:")
 extensions = extensionsIn.strip().lower()
 
-gif = ".gif"
-jpg = ".jpg"
+gif =".gif"
+jpg =".jpg"
 jpeg = ".jpeg"
 png = ".png"
-pdf= ".pdf"
+pdf = ".pdf"
 txt = ".txt"
 zip = ".zip"
 
-if gif in extensions:
+if extensions.endswith(gif):
     print("image/gif")
 
 elif extensions.endswith(jpg):
-    print("image/jpg")
+    print("image/jpeg")
 
 elif extensions.endswith(jpeg):
     print("image/jpeg")
 
-elif png in extensions:
+elif extensions.endswith(png):
     print("image/png")
 
-elif pdf in extensions:
+elif extensions.endswith(pdf):
     print("application/pdf")
 
-elif txt in extensions:
+elif extensions.endswith(txt):
     print("text/plain")
 
-elif zip in extensions:
+elif extensions.endswith(zip):
     print("application/zip")
 
 else:

@@ -24,12 +24,13 @@ fruit_cal = {
 
 
 
-fruit = input("Item: ").strip().lower()  
 
-while fruit not in fruit_cal:
-    fruit = input().lower()
+fruit = input("Item: ").strip().lower()
 
-print("Calories:"+ str(fruit_cal[fruit])) 
+calories = fruit_cal.get(fruit)
+
+if calories:
+    print("Calories:",calories)
 
 
 

@@ -1,11 +1,11 @@
 # (A, E, I, O, and U)
 
-yourInput = input()
+yourInput = input("Input: ")
 
 cleaned = ""
 
 for char in yourInput:
-     if char not in ['a', 'e', 'i', 'o','u']:
+     if char not in ['a','A', 'e','E', 'i','I', 'o','O','u','U']:
         cleaned += char
 
-print(cleaned)
+print("Output: " + cleaned)

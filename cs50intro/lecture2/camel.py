@@ -3,8 +3,9 @@ newstring = ""
 
 for char in camelInput:
     if char.isupper():
-        newstring += "_" + char
+        newstring += "_" + char.lower()
+
     else:
         newstring += char
 
-print("snake_case:", newstring)
+print(newstring)
